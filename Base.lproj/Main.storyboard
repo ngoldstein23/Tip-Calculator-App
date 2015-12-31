@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="XfO-oi-eLc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="2ag-KW-I7U">
+                                <rect key="frame" x="43" y="270" width="238" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                    <segment title="22%"/>
+                                </segments>
+                                <color key="tintColor" red="0.4549019608" green="0.90196078430000004" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="J45-IE-F2Q"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AJO-E5-IVz">
+                                <rect key="frame" x="39" y="96" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Bill Amount">
+                                        <attributes>
+                                            <color key="NSColor" red="0.45490196078431372" green="0.90196078431372551" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TrebuchetMS"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5HW-VU-atv">
+                                <rect key="frame" x="39" y="139" width="25" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tip">
+                                        <attributes>
+                                            <color key="NSColor" red="0.4549019608" green="0.90196078430000004" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="TrebuchetMS"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.35233052723094355" green="0.70746073298429324" blue="0.5133908570246255" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4ZP-Ld-p2g">
+                                <rect key="frame" x="39" y="178" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Total">
+                                        <attributes>
+                                            <color key="NSColor" red="0.4549019608" green="0.90196078430000004" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="TrebuchetMS"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SmC-Av-zA9">
+                                <rect key="frame" x="212" y="178" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="$100.00">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Palatino-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" id="2sc-69-W6u">
+                                <rect key="frame" x="176" y="90" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Zph-Eh-S2L"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cC1-Dc-Xfm">
+                                <rect key="frame" x="80" y="26" width="148" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tip Calculator">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17852049424468044" green="0.46486420157068065" blue="0.23735250571547103" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="27" name="SnellRoundhand"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" id="DJy-Mo-PPd">
+                                <rect key="frame" x="90" y="242" width="145" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Select Percentage">
+                                        <attributes>
+                                            <color key="NSColor" red="0.10101668197755166" green="0.41322398560209428" blue="0.20965211340238885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="TrebuchetMS"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fzZ-ey-dFj">
+                                <rect key="frame" x="39" y="213" width="148" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Amount per person">
+                                        <attributes>
+                                            <color key="NSColor" red="0.45490196078431372" green="0.90196078431372551" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TrebuchetMS"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hfQ-kP-BYl">
+                                <rect key="frame" x="203" y="214" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="$5.00">
+                                        <attributes>
+                                            <color key="NSColor" red="0.98744273560209428" green="0.98744273560209428" blue="0.98744273560209428" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Palatino-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" id="0Xu-T7-616">
+                                <rect key="frame" x="7" y="339" width="307" height="71"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.90196078430000004" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.78799736088719863" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zrk-98-j0K"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j9c-yf-vq7">
+                                <rect key="frame" x="95" y="310" width="130" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Select Party Size">
+                                        <attributes>
+                                            <color key="NSColor" red="0.21069511827644641" green="0.40406168193717273" blue="0.26819698253293112" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="TrebuchetMS"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yag-MM-tyL">
+                                <rect key="frame" x="222" y="139" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="$10.00">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97177683246073299" green="0.97177683246073299" blue="0.97177683246073299" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Palatino-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63074689136125661" green="0.63074689136125661" blue="0.63074689136125661" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.69768700429999997" green="1" blue="0.68711161200000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="I8T-xK-um6" appends="YES" id="tRT-Ru-Fen"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="1hA-pr-3fe">
+                        <barButtonItem key="rightBarButtonItem" title="Information" id="b93-3Q-HnT">
+                            <color key="tintColor" red="0.17470743741188891" green="0.43784767670157065" blue="0.29533061970065472" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="iL3-NS-fAJ" kind="push" id="fbM-Gz-rZQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="billField" destination="2sc-69-W6u" id="iqS-IO-huZ"/>
+                        <outlet property="perPerson" destination="hfQ-kP-BYl" id="eOx-9g-eAW"/>
+                        <outlet property="pickerWV" destination="0Xu-T7-616" id="GmE-7q-XeZ"/>
+                        <outlet property="tipControl" destination="2ag-KW-I7U" id="YLg-tO-oRq"/>
+                        <outlet property="tipLabel" destination="yag-MM-tyL" id="jNv-t7-aJu"/>
+                        <outlet property="totalLabel" destination="SmC-Av-zA9" id="ubI-gT-Vqf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="I8T-xK-um6">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="0gD-0t-Tep"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="734" y="296"/>
+        </scene>
+        <!--How to Use -->
+        <scene sceneID="NyE-t2-aug">
+            <objects>
+                <viewController title="How to Use " id="iL3-NS-fAJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jYY-cx-56T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Ok-ns-eT8">
+                                <rect key="frame" x="116" y="77" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="How to Use">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="TrebuchetMS"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="Wqg-iS-iX9">
+                                <rect key="frame" x="52" y="123" width="240" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">To use this app enter the value of your bill and choose which percentage of tip you would like to give. Finally, choose how many ways you would like to split the bill in the "Select Party Size" area. </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.4549019608" green="0.90196078430000004" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="TrebuchetMS"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EQI-vv-FbF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4S-0P-oId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="296"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5sb-aZ-DAZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XfO-oi-eLc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6XM-xG-xos">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TL5-xc-Ud6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPf-0f-gOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202" y="296"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.29251949902132945" green="0.54697725785340312" blue="0.39454943610139703" alpha="1" colorSpace="calibratedRGB"/>
+</document>

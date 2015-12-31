@@ -6,7 +6,7 @@ Tip Calculator is a tip calculator application for iOS.
 
 Submitted by: Natalie Goldstein
 
-Time spent: 7 hours spent in total
+Time spent: 8 hours spent in total
 
 ## User Stories
 
@@ -33,7 +33,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-I initially tried to put the picker wheel in the settings page but I had trouble finding a way to use the picker wheel value in my ViewController class. I tried to make the picker wheel value global and then tried using the segue functions. I got close using segue but there was some issues transferring the picker wheel value as a string versus an int. I then just decided to put the picker wheel on the main screen so I could at least get it working there. There is still a problem with the picker wheel in that when you switch the values they do not automatically update. However, if you change the picker value and then change the percent value both will update. 
+I initially tried to put the picker wheel in the settings page but I had trouble finding a way to use the picker wheel value in my ViewController class. I tried to make the picker wheel value global and then tried using the segue functions. I got close using segue but there was some issues transferring the picker wheel value as a string versus an int. I then just decided to put the picker wheel on the main screen so I could at least get it working there. There is still a problem with the picker wheel in that when you switch the values they do not automatically update. However, if you change the picker value and then change the percent value both will update. Also, I have never used GitHub before so I am not sure if I did everything correctly. 
 
 
 ## License
